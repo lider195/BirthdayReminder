@@ -58,16 +58,40 @@
 		DD31D5E427D4A1CD00E80710 /* BirthdayReminder */ = {
 			isa = PBXGroup;
 			children = (
+				DD31D5FE27D4A2EC00E80710 /* Model */,
+				DD31D5FD27D4A2E700E80710 /* View */,
+				DD31D5FC27D4A2DE00E80710 /* Controller */,
+				DD31D5F127D4A1CE00E80710 /* Assets.xcassets */,
 				DD31D5E527D4A1CD00E80710 /* AppDelegate.swift */,
 				DD31D5E727D4A1CD00E80710 /* SceneDelegate.swift */,
-				DD31D5E927D4A1CD00E80710 /* ViewController.swift */,
-				DD31D5EB27D4A1CD00E80710 /* Main.storyboard */,
-				DD31D5F127D4A1CE00E80710 /* Assets.xcassets */,
-				DD31D5F327D4A1CE00E80710 /* LaunchScreen.storyboard */,
 				DD31D5F627D4A1CE00E80710 /* Info.plist */,
 				DD31D5EE27D4A1CD00E80710 /* BirthdayReminder.xcdatamodeld */,
 			);
 			path = BirthdayReminder;
+			sourceTree = "<group>";
+		};
+		DD31D5FC27D4A2DE00E80710 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DD31D5E927D4A1CD00E80710 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DD31D5FD27D4A2E700E80710 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD31D5F327D4A1CE00E80710 /* LaunchScreen.storyboard */,
+				DD31D5EB27D4A1CD00E80710 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DD31D5FE27D4A2EC00E80710 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
