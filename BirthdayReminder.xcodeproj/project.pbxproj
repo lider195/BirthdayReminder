@@ -14,6 +14,16 @@
 		DD31D5F027D4A1CD00E80710 /* BirthdayReminder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD31D5EE27D4A1CD00E80710 /* BirthdayReminder.xcdatamodeld */; };
 		DD31D5F227D4A1CE00E80710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD31D5F127D4A1CE00E80710 /* Assets.xcassets */; };
 		DD31D5F527D4A1CE00E80710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD31D5F327D4A1CE00E80710 /* LaunchScreen.storyboard */; };
+		DD31D60027D4ACB900E80710 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31D5FF27D4ACB900E80710 /* Person.swift */; };
+		DD31D60327D4AD6600E80710 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31D60227D4AD6600E80710 /* TableViewCell.swift */; };
+		DD31D60527D4DC9E00E80710 /* informationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31D60427D4DC9E00E80710 /* informationViewController.swift */; };
+		DD31D60727D4E0C400E80710 /* textFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31D60627D4E0C400E80710 /* textFieldView.swift */; };
+		DD31D60927D65B0600E80710 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31D60827D65B0600E80710 /* CoreDataManager.swift */; };
+		DD31D60C27D9ED9B00E80710 /* EnumColorSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31D60B27D9ED9B00E80710 /* EnumColorSettings.swift */; };
+		DD31D66F27DD1B5800E80710 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31D66E27DD1B5800E80710 /* NotificationManager.swift */; };
+		DD31D67127DDD5A400E80710 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31D67027DDD5A400E80710 /* UITextField+.swift */; };
+		DD31D67627DDE1D600E80710 /* imageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31D67427DDE1D600E80710 /* imageCollectionViewCell.swift */; };
+		DD31D67727DDE1D600E80710 /* imageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD31D67527DDE1D600E80710 /* imageCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +36,16 @@
 		DD31D5F127D4A1CE00E80710 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD31D5F427D4A1CE00E80710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD31D5F627D4A1CE00E80710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD31D5FF27D4ACB900E80710 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		DD31D60227D4AD6600E80710 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		DD31D60427D4DC9E00E80710 /* informationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = informationViewController.swift; sourceTree = "<group>"; };
+		DD31D60627D4E0C400E80710 /* textFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textFieldView.swift; sourceTree = "<group>"; };
+		DD31D60827D65B0600E80710 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		DD31D60B27D9ED9B00E80710 /* EnumColorSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumColorSettings.swift; sourceTree = "<group>"; };
+		DD31D66E27DD1B5800E80710 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		DD31D67027DDD5A400E80710 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
+		DD31D67427DDE1D600E80710 /* imageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageCollectionViewCell.swift; sourceTree = "<group>"; };
+		DD31D67527DDE1D600E80710 /* imageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = imageCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +78,7 @@
 		DD31D5E427D4A1CD00E80710 /* BirthdayReminder */ = {
 			isa = PBXGroup;
 			children = (
+				DD31D60A27D9ED7700E80710 /* Enum */,
 				DD31D5FE27D4A2EC00E80710 /* Model */,
 				DD31D5FD27D4A2E700E80710 /* View */,
 				DD31D5FC27D4A2DE00E80710 /* Controller */,
@@ -66,6 +87,8 @@
 				DD31D5E727D4A1CD00E80710 /* SceneDelegate.swift */,
 				DD31D5F627D4A1CE00E80710 /* Info.plist */,
 				DD31D5EE27D4A1CD00E80710 /* BirthdayReminder.xcdatamodeld */,
+				DD31D60827D65B0600E80710 /* CoreDataManager.swift */,
+				DD31D66E27DD1B5800E80710 /* NotificationManager.swift */,
 			);
 			path = BirthdayReminder;
 			sourceTree = "<group>";
@@ -74,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				DD31D5E927D4A1CD00E80710 /* ViewController.swift */,
+				DD31D60427D4DC9E00E80710 /* informationViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -81,8 +105,11 @@
 		DD31D5FD27D4A2E700E80710 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DD31D60627D4E0C400E80710 /* textFieldView.swift */,
+				DD31D60127D4AD5300E80710 /* Cell */,
 				DD31D5F327D4A1CE00E80710 /* LaunchScreen.storyboard */,
 				DD31D5EB27D4A1CD00E80710 /* Main.storyboard */,
+				DD31D67027DDD5A400E80710 /* UITextField+.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -90,8 +117,27 @@
 		DD31D5FE27D4A2EC00E80710 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DD31D5FF27D4ACB900E80710 /* Person.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DD31D60127D4AD5300E80710 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DD31D60227D4AD6600E80710 /* TableViewCell.swift */,
+				DD31D67427DDE1D600E80710 /* imageCollectionViewCell.swift */,
+				DD31D67527DDE1D600E80710 /* imageCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DD31D60A27D9ED7700E80710 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				DD31D60B27D9ED9B00E80710 /* EnumColorSettings.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +200,7 @@
 			files = (
 				DD31D5F527D4A1CE00E80710 /* LaunchScreen.storyboard in Resources */,
 				DD31D5F227D4A1CE00E80710 /* Assets.xcassets in Resources */,
+				DD31D67727DDE1D600E80710 /* imageCollectionViewCell.xib in Resources */,
 				DD31D5ED27D4A1CD00E80710 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,9 +212,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD31D60027D4ACB900E80710 /* Person.swift in Sources */,
+				DD31D60C27D9ED9B00E80710 /* EnumColorSettings.swift in Sources */,
 				DD31D5EA27D4A1CD00E80710 /* ViewController.swift in Sources */,
+				DD31D60727D4E0C400E80710 /* textFieldView.swift in Sources */,
+				DD31D67627DDE1D600E80710 /* imageCollectionViewCell.swift in Sources */,
+				DD31D66F27DD1B5800E80710 /* NotificationManager.swift in Sources */,
 				DD31D5E627D4A1CD00E80710 /* AppDelegate.swift in Sources */,
+				DD31D60327D4AD6600E80710 /* TableViewCell.swift in Sources */,
 				DD31D5F027D4A1CD00E80710 /* BirthdayReminder.xcdatamodeld in Sources */,
+				DD31D60927D65B0600E80710 /* CoreDataManager.swift in Sources */,
+				DD31D60527D4DC9E00E80710 /* informationViewController.swift in Sources */,
+				DD31D67127DDD5A400E80710 /* UITextField+.swift in Sources */,
 				DD31D5E827D4A1CD00E80710 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
