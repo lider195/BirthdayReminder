@@ -76,12 +76,10 @@ final class MainTextField: UIView, UITextFieldDelegate {
     // MARK: - Helpers
     @objc func endSettTextField() {
         let entryName = textField.text!
-        if entryName.isEmpty {
-        } else {
+        if !entryName.isEmpty {
             separatorView.backgroundColor = .systemGreen
         }
     }
-
     @objc func startSettTextField() {
         textField.placeholder = ""
         label.translatesAutoresizingMaskIntoConstraints = false

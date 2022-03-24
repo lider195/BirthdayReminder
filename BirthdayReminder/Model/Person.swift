@@ -8,8 +8,4 @@ struct Person {
     var imagePerson:Data {
         didSet { _ = UIImage(data: imagePerson)! }
     }
-    
-//    lazy var mainImage: UIImage = {
-//        UIImage(data: imagePerson)!
-//    }()
 }
