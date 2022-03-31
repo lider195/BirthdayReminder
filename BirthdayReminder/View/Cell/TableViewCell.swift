@@ -9,7 +9,6 @@ final class TableViewCell: UITableViewCell {
     private let nameLabel = UILabel()
     private let surNameLabel = UILabel()
     private var dateLabel = UILabel()
-    private var sex = Bool()
     private var agelabel = UILabel()
     private var imagePerson = UIImageView()
     // MARK: - Init
@@ -27,14 +26,13 @@ final class TableViewCell: UITableViewCell {
     }
 
     // MARK: - API
+  
+    
     func set(_ user: Person) {
         nameLabel.text = user.name
         surNameLabel.text = user.surName
 
-        let dateAnswer = DateFormatter()
-        dateAnswer.dateFormat = "dd-MM-YYYY"
-        let releasingDate: String = dateAnswer.string(from: user.date)
-        dateLabel.text = releasingDate
+        dateLabel.text = dateFormatter(user.date)
         imagePerson.image = UIImage(data: user.imagePerson)
 
         agelabel.text = " Age - \(user.age)"
@@ -96,5 +94,11 @@ final class TableViewCell: UITableViewCell {
         view.layer.cornerRadius = 25
         agelabel.textAlignment = .center
     }
+    private func dateFormatter(_ date: Date) -> String{
+         let dateAnswer = DateFormatter()
+         dateAnswer.dateFormat = "dd-MM-YYYY"
+         let releasingDate: String = dateAnswer.string(from: date)
+         return releasingDate
+     }
     // MARK: - Helpers
 }

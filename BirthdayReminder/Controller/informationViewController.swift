@@ -15,10 +15,13 @@ final class InformationViewController: UIViewController {
     private var textFields = UITextField()
     private let layout = UICollectionViewFlowLayout()
     private let reuseIdentifier = "imageCollectionViewCell"
-    lazy var collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
     private var topConstrains = NSLayoutConstraint()
-    private var hours:Int = -1
-    private var minutes:Int = -1
+    private var hours: Int = -1
+    private var minutes: Int = -1
+    // MARK: Lazy
+    lazy var collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
+
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,21 +65,17 @@ final class InformationViewController: UIViewController {
         nameTextField.translatesAutoresizingMaskIntoConstraints = false
         nameTextField.topAnchor.constraint(equalTo: view.topAnchor, constant: 220).isActive = true
         nameTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
-        nameTextField.heightAnchor.constraint(equalToConstant: 52).isActive = true
         nameTextField.widthAnchor.constraint(equalToConstant: 320).isActive = true
 
         surNameTextField.translatesAutoresizingMaskIntoConstraints = false
         surNameTextField.topAnchor.constraint(equalTo: nameTextField.bottomAnchor, constant: 30).isActive = true
         surNameTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
-        surNameTextField.heightAnchor.constraint(equalToConstant: 52).isActive = true
         surNameTextField.widthAnchor.constraint(equalToConstant: 320).isActive = true
-
 
         datePicker.translatesAutoresizingMaskIntoConstraints = false
         datePicker.topAnchor.constraint(equalTo: surNameTextField.bottomAnchor, constant: 30).isActive = true
         datePicker.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
         datePicker.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50).isActive = true
-        datePicker.heightAnchor.constraint(equalToConstant: 200).isActive = true
 
         imageViewCollectionView.translatesAutoresizingMaskIntoConstraints = false
         imageViewCollectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
@@ -88,8 +87,6 @@ final class InformationViewController: UIViewController {
         cancelButton.translatesAutoresizingMaskIntoConstraints = false
         cancelButton.topAnchor.constraint(equalTo: imageViewCollectionView.topAnchor, constant: 10).isActive = true
         cancelButton.centerXAnchor.constraint(equalTo: imageViewCollectionView.centerXAnchor, constant: 0).isActive = true
-        cancelButton.heightAnchor.constraint(equalToConstant: 20).isActive = true
-        cancelButton.widthAnchor.constraint(equalToConstant: 60).isActive = true
 
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.topAnchor.constraint(equalTo: cancelButton.bottomAnchor, constant: 0).isActive = true
@@ -135,6 +132,7 @@ final class InformationViewController: UIViewController {
         surNameTextField.setLabel("SurName")
         textFields.setInputDatePicker(target: self, selector: #selector(saveTimeNotification))
     }
+
     private func barButton() {
         let saveButton = UIBarButtonItem(barButtonSystemItem: .save,
                                          target: self,
@@ -159,23 +157,19 @@ final class InformationViewController: UIViewController {
             minute.dateFormat = "mm"
             hours = Int(hour.string(from: userNotification))!
             minutes = Int(minute.string(from: userNotification))!
-         
-            
         }
         textFields.endEditing(true)
     }
 
     @objc func addImage() {
-        topConstrains.constant += 250
-        UIView.animate(withDuration: 1) {
+        topConstrains.constant = 250
+        UIView.animate(withDuration: 2) {
             self.view.layoutIfNeeded()
         }
     }
-
     @objc func timeNotification() {
         textFields.becomeFirstResponder()
     }
-
     @objc func cancelView() {
         topConstrains.constant -= 250
         UIView.animate(withDuration: 1) {
@@ -188,7 +182,6 @@ final class InformationViewController: UIViewController {
         let surName = surNameTextField.text
 
         let userDate = datePicker.date
-        
 
         let brDay = Calendar.current.dateComponents([.year, .month, .day], from: datePicker.date)
 

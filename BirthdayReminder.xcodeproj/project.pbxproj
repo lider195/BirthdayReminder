@@ -23,7 +23,7 @@
 		DD31D66F27DD1B5800E80710 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31D66E27DD1B5800E80710 /* NotificationManager.swift */; };
 		DD31D67127DDD5A400E80710 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31D67027DDD5A400E80710 /* UITextField+.swift */; };
 		DD31D67627DDE1D600E80710 /* imageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31D67427DDE1D600E80710 /* imageCollectionViewCell.swift */; };
-		DD31D67727DDE1D600E80710 /* imageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD31D67527DDE1D600E80710 /* imageCollectionViewCell.xib */; };
+		DDC4074227EC58AB00974911 /* imageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDC4074127EC58AB00974911 /* imageCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +45,7 @@
 		DD31D66E27DD1B5800E80710 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		DD31D67027DDD5A400E80710 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		DD31D67427DDE1D600E80710 /* imageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageCollectionViewCell.swift; sourceTree = "<group>"; };
-		DD31D67527DDE1D600E80710 /* imageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = imageCollectionViewCell.xib; sourceTree = "<group>"; };
+		DDC4074127EC58AB00974911 /* imageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = imageCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +127,7 @@
 			children = (
 				DD31D60227D4AD6600E80710 /* TableViewCell.swift */,
 				DD31D67427DDE1D600E80710 /* imageCollectionViewCell.swift */,
-				DD31D67527DDE1D600E80710 /* imageCollectionViewCell.xib */,
+				DDC4074127EC58AB00974911 /* imageCollectionViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -200,7 +200,7 @@
 			files = (
 				DD31D5F527D4A1CE00E80710 /* LaunchScreen.storyboard in Resources */,
 				DD31D5F227D4A1CE00E80710 /* Assets.xcassets in Resources */,
-				DD31D67727DDE1D600E80710 /* imageCollectionViewCell.xib in Resources */,
+				DDC4074227EC58AB00974911 /* imageCollectionViewCell.xib in Resources */,
 				DD31D5ED27D4A1CD00E80710 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
